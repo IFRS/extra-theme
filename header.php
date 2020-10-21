@@ -35,15 +35,17 @@
     <!-- Barra -->
     <div class="barra-social">
         <div class="container">
-            <div class="col-12 col-sm-6"></div>
-            <div class="col-12 col-sm-6">
-                <?php if (is_active_sidebar('sidebar-social')) : ?>
-                    <nav>
-                        <ul class="area-social">
-                            <?php if (!dynamic_sidebar('sidebar-social')) : endif; ?>
-                        </ul>
-                    </nav>
-                <?php endif; ?>
+            <div class="row">
+                <div class="col-12 col-sm-6"></div>
+                <div class="col-12 col-sm-6">
+                    <?php if (is_active_sidebar('sidebar-social')) : ?>
+                        <nav>
+                            <ul class="area-social">
+                                <?php if (!dynamic_sidebar('sidebar-social')) : endif; ?>
+                            </ul>
+                        </nav>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
     </div>
@@ -54,15 +56,29 @@
     </div>
 
     <!-- Cabeçalho -->
-    <header>
+    <header class="header">
+    <?php if ( get_header_image() ) : ?>
+        <img
+            src="<?php header_image(); ?>"
+            width="<?php echo absint( get_custom_header()->width ); ?>"
+            height="<?php echo absint( get_custom_header()->height ); ?>"
+            alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
+            aria-hidden="true"
+            class="header__background-image"
+        />
+    <?php endif; ?>
         <div class="container">
-            <?php if (has_custom_logo()) : ?>
-                <div class="col-12 col-md-5">
-                    <?php the_custom_logo(); ?>
+            <div class="row no-gutters align-items-end">
+                <?php if (has_custom_logo()) : ?>
+                    <div class="col-12 col-md-5">
+                        <?php the_custom_logo(); ?>
+                    </div>
+                <?php endif; ?>
+                <div class="col-12 col-md-7">
+                    <div class="header__titulo">
+                        <h1><?php bloginfo('name'); ?></h1>
+                    </div>
                 </div>
-            <?php endif; ?>
-            <div class="col">
-                <h1><?php bloginfo('name'); ?></h1>
             </div>
         </div>
     </header>

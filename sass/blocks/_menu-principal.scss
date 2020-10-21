@@ -1,0 +1,20 @@
+.menu-principal {
+    margin: 0 auto;
+
+    > .nav-item {
+        padding: 10px 20px;
+    }
+
+    .nav-link {
+        font-size: 1.1rem;
+    }
+
+    > .current-menu-item,
+    > .current-menu-parent {
+        border-bottom: 5px solid $primary;
+    }
+
+    .dropdown-menu > li.active > .dropdown-item {
+        @extend .active;
+    }
+}
