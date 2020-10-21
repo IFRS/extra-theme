@@ -14,7 +14,7 @@ add_action( 'after_setup_theme', function() {
 
     // Add theme support for Custom Logo
     add_theme_support( 'custom-logo', array(
-        'height'      => 100,
+        'height'      => 300,
         'width'       => 400,
         'flex-height' => true,
         'flex-width'  => true,
@@ -23,8 +23,8 @@ add_action( 'after_setup_theme', function() {
     // Add theme support for Custom Header
     add_theme_support( 'custom-header', array(
         'default-image'          => '',
-        'width'                  => 0,
-        'height'                 => 0,
+        'width'                  => 2560,
+        'height'                 => 1440,
         'flex-width'             => false,
         'flex-height'            => true,
         'uploads'                => true,
@@ -35,15 +35,25 @@ add_action( 'after_setup_theme', function() {
         'admin-head-callback'    => '',
         'admin-preview-callback' => '',
         'video'                  => true,
-        'video-active-callback'  => '',
+        'video-active-callback'  => 'is_front_page || is_home',
     ) );
 
     // Default Headers
     register_default_headers( array(
-        'alvorada' => array(
-            'description' => __( 'Campus Alvorada', 'ifrs-extra-theme' ),
-            'url' => '/img/header-alvorada.png',
-            'thumbnail_url' => '/img/header-alvorada.thumb.png',
-        )
+        // 'alvorada' => array(
+        //     'url'           => '%s/img/header/alvorada.jpg',
+        //     'thumbnail_url' => '/img/header-alvorada.thumb.png',
+        //     'description'   => __( 'Campus Alvorada', 'ifrs-extra-theme' ),
+        // ),
+        // 'bento' => array(
+        //     'url'           => '%s/img/header/bento.jpg',
+        //     'thumbnail_url' => '/img/header/bento.thumb.png',
+        //     'description'   => __( 'Campus Bento', 'ifrs-extra-theme' ),
+        // ),
+        // 'canoas' => array(
+        //     'url'           => '%s/img/header/canoas.jpg',
+        //     'thumbnail_url' => '/img/header/canoas.thumb.png',
+        //     'description'   => __( 'Campus Canoas', 'ifrs-extra-theme' ),
+        // ),
     ) );
 } );
