@@ -4,27 +4,58 @@
 
 <!-- Rodapé -->
 <footer>
-
-</footer>
-
-<div class="creditos">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <p>
-                    <!-- Wordpress -->
-                    <a href="http://br.wordpress.org/" target="_blank" rel="noopener noreferrer">Desenvolvido com Wordpress<span class="sr-only"> (abre uma nova p&aacute;gina)</span></a>
-                    &mdash;
-                    <!-- Código-fonte GPL -->
-                    <a href="https://github.com/IFRS/extra-theme/" target="_blank" rel="noopener noreferrer">C&oacute;digo-fonte deste tema sob a licen&ccedil;a GPLv3<span class="sr-only"> (abre uma nova p&aacute;gina)</span></a>
-                    &mdash;
-                    <!-- Creative Commons -->
-                    <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="license noopener noreferrer"><img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/cc-by-nc-nd.png" alt="M&iacute;dia licenciada sob a Licen&ccedil;a Creative Commons Atribui&ccedil;&atilde;o-N&atilde;oComercial-SemDeriva&ccedil;&otilde;es 4.0 Internacional (abre uma nova p&aacute;gina)" /></a>
-                </p>
+<?php if (is_active_sidebar('sidebar-banners')) : ?>
+    <div class="area-banners">
+        <?php dynamic_sidebar('sidebar-banners'); ?>
+    </div>
+<?php endif; ?>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                <?php if (has_nav_menu('principal')) : ?>
+                    <nav id="mapa-site" class="site-map" aria-labelledby="mapa-site-titulo">
+                        <h2 id="mapa-site-titulo" class="site-map__title">Mapa do Site</h2>
+                        <?php
+                            wp_nav_menu( array(
+                                'theme_location'    => 'principal',
+                                'depth'             => 2,
+                                'container'         => false,
+                                'container_class'   => false,
+                                'container_id'      => false,
+                                'menu_id'           => false,
+                                'menu_class'        => 'site-map__menu',
+                            ));
+                        ?>
+                    </nav>
+                <?php endif; ?>
+                </div>
+                <div class="col-12 col-md-4">
+                    <?php if (!dynamic_sidebar('sidebar-rodape')) : endif; ?>
+                    <div class="creditos">
+                        <!-- Wordpress -->
+                        <a href="http://br.wordpress.org/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="bottom" title="Desenvolvido com Wordpress">
+                            <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/creditos-wordpress.png" alt="Desenvolvido com Wordpress (abre uma nova p&aacute;gina)" class="lazyload"/>
+                        </a>
+                        <!-- Código-fonte -->
+                        <a href="https://github.com/IFRS/extra-theme/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="bottom" title="C&oacute;digo-fonte deste tema sob a licen&ccedil;a GPLv3">
+                            <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/creditos-git.png" alt="C&oacute;digo-fonte deste tema sob a licen&ccedil;a GPLv3 (abre uma nova p&aacute;gina)" class="lazyload"/>
+                        </a>
+                        <!-- Creative Commons -->
+                        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer license" data-toggle="tooltip" data-placement="bottom" title="M&iacute;dia licenciada sob a Licen&ccedil;a Creative Commons Atribui&ccedil;&atilde;o-N&atilde;oComercial-CompartilhaIgual 4.0 Internacional">
+                            <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/creditos-cc-by-nc-sa.png" alt="M&iacute;dia licenciada sob a Licen&ccedil;a Creative Commons Atribui&ccedil;&atilde;o-N&atilde;oComercial-CompartilhaIgual 4.0 Internacional (abre uma nova p&aacute;gina)" class="lazyload"/>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="portal">
+        <a href="https://ifrs.edu.br/" data-toggle="tooltip" data-placement="top" title="Portal do IFRS">
+            <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/ifrs.png" alt="Portal do IFRS" class="lazyload img-fluid"/>
+        </a>
+    </div>
+</footer>
 
 <?php wp_footer(); ?>
 

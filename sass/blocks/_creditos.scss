@@ -1,0 +1,19 @@
+.creditos {
+    font-size: 0.75rem;
+    margin-top: 30px;
+    text-align: center;
+
+    > a {
+        display: inline-block;
+        margin-right: 20px;
+        opacity: 0.75;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
