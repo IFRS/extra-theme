@@ -7,3 +7,4 @@ require('./modules/wp-customizer');
 
 require('./modules/picturefill-config');
 require('./modules/fancybox-config');
+require('./modules/tooltip');
