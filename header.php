@@ -39,9 +39,9 @@
                 <div class="col-12 col-sm-6"></div>
                 <div class="col-12 col-sm-6">
                     <?php if (is_active_sidebar('sidebar-social')) : ?>
-                        <nav>
+                        <nav aria-label="Redes Sociais">
                             <ul class="area-social">
-                                <?php if (!dynamic_sidebar('sidebar-social')) : endif; ?>
+                                <?php dynamic_sidebar('sidebar-social'); ?>
                             </ul>
                         </nav>
                     <?php endif; ?>
