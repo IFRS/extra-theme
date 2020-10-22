@@ -6,7 +6,11 @@
 <footer>
 <?php if (is_active_sidebar('sidebar-banners')) : ?>
     <div class="area-banners">
-        <?php dynamic_sidebar('sidebar-banners'); ?>
+        <div class="container">
+            <div class="area-banners__grid">
+                <?php dynamic_sidebar('sidebar-banners'); ?>
+            </div>
+        </div>
     </div>
 <?php endif; ?>
     <div class="footer">

@@ -1,0 +1,29 @@
+.area-banners {
+    background: $gray-100;
+    padding: 30px 0;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 30px 30px;
+
+        @include media-breakpoint-down(md) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include media-breakpoint-only(xs) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__widget {
+        display: block;
+        // margin-right: 20px;
+        text-align: center;
+
+        img {
+            @extend .img-fluid;
+        }
+    }
+}
