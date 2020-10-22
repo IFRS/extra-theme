@@ -59,12 +59,12 @@
     <header class="header">
     <?php if ( get_header_image() ) : ?>
         <img
-            src="<?php header_image(); ?>"
+            data-src="<?php header_image(); ?>"
             width="<?php echo absint( get_custom_header()->width ); ?>"
             height="<?php echo absint( get_custom_header()->height ); ?>"
-            alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
+            alt=""
             aria-hidden="true"
-            class="header__background-image"
+            class="lazyload header__background-image"
         />
     <?php endif; ?>
         <div class="container">
