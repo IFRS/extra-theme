@@ -34,7 +34,7 @@
                     <?php if (!dynamic_sidebar('sidebar-rodape')) : endif; ?>
                     <div class="creditos">
                         <!-- Wordpress -->
-                        <a href="http://br.wordpress.org/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="bottom" title="Desenvolvido com Wordpress">
+                        <a href="https://br.wordpress.org/" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="bottom" title="Desenvolvido com Wordpress">
                             <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/creditos-wordpress.png" alt="Desenvolvido com Wordpress (abre uma nova p&aacute;gina)" class="lazyload"/>
                         </a>
                         <!-- Código-fonte -->
@@ -42,7 +42,7 @@
                             <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/creditos-git.png" alt="C&oacute;digo-fonte deste tema sob a licen&ccedil;a GPLv3 (abre uma nova p&aacute;gina)" class="lazyload"/>
                         </a>
                         <!-- Creative Commons -->
-                        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer license" data-toggle="tooltip" data-placement="bottom" title="M&iacute;dia licenciada sob a Licen&ccedil;a Creative Commons Atribui&ccedil;&atilde;o-N&atilde;oComercial-CompartilhaIgual 4.0 Internacional">
+                        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer license" data-toggle="tooltip" data-placement="bottom" title="M&iacute;dia licenciada sob a Licen&ccedil;a Creative Commons Atribui&ccedil;&atilde;o-N&atilde;oComercial-CompartilhaIgual 4.0 Internacional">
                             <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/creditos-cc-by-nc-sa.png" alt="M&iacute;dia licenciada sob a Licen&ccedil;a Creative Commons Atribui&ccedil;&atilde;o-N&atilde;oComercial-CompartilhaIgual 4.0 Internacional (abre uma nova p&aacute;gina)" class="lazyload"/>
                         </a>
                     </div>
