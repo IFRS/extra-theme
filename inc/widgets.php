@@ -29,11 +29,11 @@ add_action( 'widgets_init', function() {
     ));
     register_sidebar(array(
         'name'          => 'Área Rodapé',
-        'id'            => 'sidebar-footer',
+        'id'            => 'sidebar-rodape',
         'description'   => __('Área no rodapé, ao lado do mapa do site, usualmente para colocar os contatos e endereço.', 'ifrs-extra-theme'),
         'before_widget' => '<div id="%1$s" class="area-rodape__widget %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<span class="sr-only">',
-        'after_title'   => '</span>',
+        'before_title'  => '<h2 class="area-rodape__titulo">',
+        'after_title'   => '</h2>',
     ));
 } );
