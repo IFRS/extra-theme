@@ -16,7 +16,7 @@ add_action( 'wp_enqueue_scripts', function() {
     /* wp_register_script( $handle, $src, $deps, $ver, $in_footer ); */
     /* wp_enqueue_script( $handle[, $src, $deps, $ver, $in_footer] ); */
 
-    if (!is_admin()) {
+    if (!is_admin() && !is_customize_preview()) {
         wp_deregister_script('jquery');
     }
 
