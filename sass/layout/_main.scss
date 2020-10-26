@@ -1,3 +1,7 @@
 main {
-    padding-bottom: 30px;
+    padding: 10px 0;
+
+    img {
+        @extend .img-fluid;
+    }
 }
