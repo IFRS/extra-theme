@@ -5,19 +5,19 @@
 }
 
 .aligncenter {
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .alignright {
     float: right;
-    margin-bottom: 10px;
-    margin-left: 10px;
+    margin-bottom: 15px;
+    margin-left: 15px;
 }
 
 .alignleft {
     float: left;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
 }
 
 a {
@@ -49,18 +49,6 @@ a {
     max-width: 96%; /* Image does not overflow the content area */
     padding: 5px;
     text-align: center;
-
-    &.alignnone {
-        margin: 5px 15px 15px 0;
-    }
-
-    &.alignleft {
-        margin: 5px 15px 15px 0;
-    }
-
-    &.alignright {
-        margin: 5px 0 15px 15px;
-    }
 
     img {
         height: auto;
@@ -139,7 +127,7 @@ a {
 }
 
 .gallery-caption {
-    color: #666;
+    color: #666666;
     font-size: 0.7rem;
 }
 
