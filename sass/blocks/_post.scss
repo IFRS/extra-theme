@@ -1,53 +1,61 @@
 .post {
-    &__meta {
+    background: $gray-100;
+    border: 1px solid $gray-400;
+    margin-top: 15px;
+    padding: 20px 10px 10px;
+
+    &__titulo {
+        border: none;
+        font-size: 1.25rem;
+        margin-top: 0;
+        text-transform: uppercase;
+    }
+
+    &__resumo {
         color: $gray-700;
+    }
+
+    &__separador {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    &__meta {
+        color: $gray-600;
         font-size: 0.8rem;
-
-        a {
-            opacity: 0.9;
-        }
+        text-align: center;
     }
 
-    &__date {
-        @include icon-calendar($primary);
+    &__comentarios {
+        @include icon-comment($gray-500);
 
-        background-position: left center;
-        display: block;
-        margin-bottom: 5px;
-        padding-left: 22px;
-    }
-
-    &__thumb {
-        margin-bottom: 15px;
-
-        @include media-breakpoint-up(md) {
-            max-width: 40%;
-            height: auto;
-            float: left;
-            margin-right: 15px;
-            margin-bottom: 10px;
-        }
-
-        a {
-            display: inline-block;
-        }
-    }
-
-    &__tags-separator {
-        clear: both;
-    }
-
-    &__tags {
-        clear: both;
-        font-size: 0.8rem;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    &__tag {
+        background-position: right center;
+        background-size: 16px;
         display: inline-block;
-        margin-bottom: 5px;
-        margin-right: 10px;
+        margin-right: 20px;
+        padding-right: 18px;
+    }
+
+    &__data {
+        @include icon-calendar($gray-500);
+
+        background-position: right center;
+        background-size: 16px;
+        display: inline-block;
+        padding-right: 18px;
+    }
+
+    &__button {
+        @extend .btn;
+        @extend .btn-lg;
+        @include button-outline-variant($gray-400);
+        @include icon-chevron-right($primary);
+
+        background-position: right center;
+        background-size: 32px;
+        color: $primary;
+        font-weight: bold;
+        padding-right: 38px;
+        text-transform: uppercase;
     }
 }
