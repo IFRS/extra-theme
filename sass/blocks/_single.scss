@@ -1,0 +1,57 @@
+.single {
+    &__title {
+        margin-top: 5px;
+    }
+
+    &__meta {
+        color: $gray-700;
+        font-size: 0.8rem;
+
+        a {
+            opacity: 0.9;
+        }
+    }
+
+    &__date {
+        @include icon-calendar($primary);
+
+        background-position: left center;
+        display: block;
+        margin-bottom: 5px;
+        padding-left: 22px;
+    }
+
+    &__thumb {
+        margin-bottom: 15px;
+
+        @include media-breakpoint-up(md) {
+            max-width: 40%;
+            height: auto;
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: inline-block;
+        }
+    }
+
+    &__tags-separator {
+        clear: both;
+    }
+
+    &__tags {
+        clear: both;
+        font-size: 0.8rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__tag {
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+}
