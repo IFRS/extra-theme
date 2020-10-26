@@ -1,6 +1,11 @@
 .post {
     &__meta {
+        color: $gray-700;
         font-size: 0.8rem;
+
+        a {
+            opacity: 0.9;
+        }
     }
 
     &__date {
