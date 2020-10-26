@@ -56,15 +56,12 @@ a {
         max-width: 98.5%;
         padding: 0;
     }
-
-    p {
-        &.wp-caption-text {
-            font-size: 85%;
-            font-style: italic;
-            line-height: 17px;
-            margin: 0;
-            padding: 2px 4px 5px;
-        }
+    .wp-caption-text {
+        font-size: 85%;
+        font-style: italic;
+        line-height: 17px;
+        margin: 0;
+        padding: 3px 4px 5px;
     }
 }
 
@@ -137,4 +134,15 @@ a {
 			flex: 0 0 calc(#{percentage(1/$i)} - 5px);
 		}
 	}
+}
+
+/* Post Pagination */
+.post-page-numbers {
+    @extend .btn;
+    @extend .btn-outline-secondary;
+    @extend .btn-sm;
+
+    &.current {
+        @extend .active;
+    }
 }
