@@ -1,6 +1,20 @@
-@mixin icon-calendar($color) {
-    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20stroke%3D%22#{str-replace(inspect($color), '#', '%23')}%22%20stroke-linecap%3D%22square%22%20stroke-linejoin%3D%22arcs%22%20stroke-width%3D%223%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%3Crect%20width%3D%2218%22%20height%3D%2218%22%20x%3D%223%22%20y%3D%224%22%20rx%3D%222%22%20ry%3D%222%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M16%202v4M8%202v4M3%2010h18%22%2F%3E%0A%3C%2Fsvg%3E");
+@mixin icon() {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+@mixin icon-calendar($color) {
+    @include icon();
+    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20stroke%3D%22#{str-replace(inspect($color), '#', '%23')}%22%20stroke-linecap%3D%22square%22%20stroke-linejoin%3D%22arcs%22%20stroke-width%3D%223%22%20viewBox%3D%220%200%2024%2024%22%3E%0A%20%20%3Crect%20width%3D%2218%22%20height%3D%2218%22%20x%3D%223%22%20y%3D%224%22%20rx%3D%222%22%20ry%3D%222%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M16%202v4M8%202v4M3%2010h18%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+@mixin icon-comment($color) {
+    @include icon();
+    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22#{str-replace(inspect($color), '#', '%23')}%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22square%22%20stroke-linejoin%3D%22arcs%22%3E%3Cpath%20d%3D%22M21%2015a2%202%200%200%201-2%202H7l-4%204V5a2%202%200%200%201%202-2h14a2%202%200%200%201%202%202z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+}
+
+@mixin icon-chevron-right($color) {
+    @include icon();
+    background-image: url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22#{str-replace(inspect($color), '#', '%23')}%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22square%22%20stroke-linejoin%3D%22arcs%22%3E%3Cpath%20d%3D%22M9%2018l6-6-6-6%22%2F%3E%3C%2Fsvg%3E");
 }
