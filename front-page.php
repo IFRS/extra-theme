@@ -20,7 +20,7 @@
                         <div class="col-12 col-md-5 order-2 order-md-1">
                             <div class="post-carousel__painel">
                                 <h3 class="post-carousel__titulo"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                                <time class="post-carousel__data" datetime="<?php echo get_the_date('c'); ?>"><?php the_time('d.m.y'); ?></time>
+                                <time class="post-carousel__data" datetime="<?php echo get_the_date('c'); ?>"><?php the_time('d.m.Y'); ?></time>
                                 <hr class="post-carousel__separador">
                                 <div class="post-carousel__resumo"><?php the_excerpt(); ?></div>
                             </div>
