@@ -2,10 +2,10 @@ require('@fancyapps/fancybox');
 
 $(function() {
     $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.png'],a[href$='.gif']").attr('data-fancybox', 'gallery').each(function() {
-        let caption = $(this).parent().next('.gallery-caption').text();
+        let caption = $(this).next('.blocks-gallery-item__caption').text();
 
         if (!caption) {
-            caption = $(this).next('.wp-caption-text').text();
+            caption = $(this).parent().next('.wp-caption-text').text();
         }
 
         if (caption) {
