@@ -7,8 +7,23 @@
     &__titulo {
         border: none;
         font-size: 1.25rem;
+        margin-bottom: 10px;
         margin-top: 0;
+        padding: 0;
         text-transform: uppercase;
+    }
+
+    &__data {
+        // @include icon-calendar($gray-500);
+
+        // background-position: right center;
+        // background-size: 16px;
+        // display: inline-block;
+        // padding-right: 18px;
+
+        color: $gray-600;
+        display: inline-block;
+        margin-bottom: 10px;
     }
 
     &__resumo {
@@ -33,15 +48,6 @@
         background-size: 16px;
         display: inline-block;
         margin-right: 20px;
-        padding-right: 18px;
-    }
-
-    &__data {
-        @include icon-calendar($gray-500);
-
-        background-position: right center;
-        background-size: 16px;
-        display: inline-block;
         padding-right: 18px;
     }
 
