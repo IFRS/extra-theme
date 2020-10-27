@@ -1,0 +1,21 @@
+.carousel-frontpage {
+    margin-top: -10px;
+}
+
+.carousel-frontpage-controls {
+    text-align: right;
+}
+
+.carousel-frontpage-control-prev {
+    @include icon-chevron-left($primary);
+
+    background-size: 48px;
+    width: 48px; height: 48px;
+}
+
+.carousel-frontpage-control-next {
+    @include icon-chevron-right($primary);
+
+    background-size: 48px;
+    width: 48px; height: 48px;
+}

@@ -1,5 +1,51 @@
 <?php get_header(); ?>
 
+<?php
+    $args = array(
+        'post_type'      => 'post',
+        'posts_per_page' => -1,
+        'post__in'       => get_option('sticky_posts'),
+    );
+
+    $sticky = new WP_Query($args);
+?>
+
+<?php if ($sticky->have_posts()) : ?>
+    <div id="carousel-frontpage" class="carousel slide carousel-fade carousel-frontpage" data-interval="false">
+        <div class="carousel-inner">
+        <?php while ($sticky->have_posts()) : $sticky->the_post(); ?>
+            <div class="carousel-item<?php echo ($sticky->current_post == 0) ? ' active' : ''; ?>">
+                <article class="post-carousel">
+                    <div class="row no-gutters">
+                        <div class="col-12 col-md-5 order-2 order-md-1">
+                            <div class="post-carousel__painel">
+                                <h3 class="post-carousel__titulo"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                <time class="post-carousel__data" datetime="<?php echo get_the_date('c'); ?>"><?php the_time('d.m.y'); ?></time>
+                                <hr class="post-carousel__separador">
+                                <div class="post-carousel__resumo"><?php the_excerpt(); ?></div>
+                            </div>
+                            <div class="carousel-frontpage-controls">
+                                <a class="carousel-frontpage-control-prev btn btn-light" href="#carousel-frontpage" role="button" data-slide="prev">
+                                    <span class="sr-only">Post Anterior</span>
+                                </a>
+                                <a class="carousel-frontpage-control-next btn btn-light" href="#carousel-frontpage" role="button" data-slide="next">
+                                    <span class="sr-only">Pr&oacute;ximo Post</span>
+                                </a>
+                            </div>
+                        </div>
+                    <?php if (has_post_thumbnail()) : ?>
+                        <div class="col-12 col-md-7 order-1 order-md-2">
+                            <?php the_post_thumbnail('medium_large', array('class' => 'img-fluid')); ?>
+                        </div>
+                    <?php endif; ?>
+                    </div>
+                </article>
+            </div>
+        <?php endwhile; ?>
+        </div>
+    </div>
+<?php endif; ?>
+
 <?php if (get_option('show_on_front') === 'page') : ?>
     <?php the_post(); ?>
 
