@@ -36,9 +36,6 @@ require_once('inc/empty-search-filter.php');
 require_once('inc/widgets.php');
 require_once('inc/carousel-first-child-class.php');
 
-// Vídeos do YouTube responsivos
-require_once('inc/responsive-youtube-embed.php');
-
 // Customização do resumo dos posts
 require_once('inc/excerpt.php');
 
