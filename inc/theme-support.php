@@ -17,6 +17,9 @@ add_action( 'after_setup_theme', function() {
     // Add theme support for HTML5 Semantic Markup
     add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
 
+    // Add theme support for Responsive Embeds
+    add_theme_support( 'responsive-embeds' );
+
     // Add theme support for document Title tag
     add_theme_support( 'title-tag' );
 
