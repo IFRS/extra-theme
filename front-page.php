@@ -60,7 +60,7 @@
     <?php endwhile; ?>
     </div>
 
-    <div class="row mt-3">
+    <div class="row my-3">
         <div class="col">
         <?php if (get_option('show_on_front') === 'page') : ?>
             <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="float-right post__button"><?php _e('Todas as Postagens', 'ifrs-extra-theme'); ?></a>
@@ -69,6 +69,12 @@
         <?php endif; ?>
         </div>
     </div>
+<?php endif; ?>
+
+<?php if (is_active_sidebar('sidebar-destaques')) : ?>
+    <section class="row">
+        <?php dynamic_sidebar('sidebar-destaques'); ?>
+    </section>
 <?php endif; ?>
 
 <?php get_footer(); ?>

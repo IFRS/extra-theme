@@ -21,11 +21,11 @@ add_action( 'widgets_init', function() {
     register_sidebar(array(
         'name'          => __('Área Destaques', 'ifrs-extra-theme'),
         'id'            => 'sidebar-destaques',
-        'description'   => __('Área mais abaixo na página inicial, antes do rodapé, para páginas em destaque, galeria, etc.', 'ifrs-extra-theme'),
-        'before_widget' => '<div id="%1$s" class="area-destaque__widget %2$s">',
+        'description'   => __('Área mais abaixo na página inicial, antes do rodapé, para qualquer widget.', 'ifrs-extra-theme'),
+        'before_widget' => '<div id="%1$s" class="col-12 col-md-6 col-lg-4 widget-destaque %2$s">',
         'after_widget'  => '</div>',
-        'before_title'  => '<span class="sr-only">',
-        'after_title'   => '</span>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>',
     ));
     register_sidebar(array(
         'name'          => __('Área Banners', 'ifrs-extra-theme'),
