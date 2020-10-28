@@ -1,0 +1,11 @@
+.searchform {
+    margin: 10px 0;
+    justify-content: center;
+
+    &__submit {
+        @include icon-search(#ffffff);
+
+        background-size: 50%;
+        padding: 0 15px;
+    }
+}
