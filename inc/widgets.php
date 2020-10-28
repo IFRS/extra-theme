@@ -12,7 +12,7 @@ add_action( 'widgets_init', function() {
     register_sidebar(array(
         'name'          => __('Área Social', 'ifrs-extra-theme'),
         'id'            => 'sidebar-social',
-        'description'   => __('Área no cabeçalho para as Redes Sociais.', 'ifrs-extra-theme'),
+        'description'   => __('Área no cabeçalho para as Redes Sociais. Tamanho recomendado de 32x32 px.', 'ifrs-extra-theme'),
         'before_widget' => '<li id="%1$s" class="area-social__widget %2$s">',
         'after_widget'  => '</li>',
         'before_title'  => '<span class="sr-only">',
@@ -30,7 +30,7 @@ add_action( 'widgets_init', function() {
     register_sidebar(array(
         'name'          => __('Área Banners', 'ifrs-extra-theme'),
         'id'            => 'sidebar-banners',
-        'description'   => __('Área acima do rodapé, para banners que aparecem em todas as páginas.', 'ifrs-extra-theme'),
+        'description'   => __('Área acima do rodapé, para banners que aparecem em todas as páginas. Tamanho recomendado de 350x200 px.', 'ifrs-extra-theme'),
         'before_widget' => '<div id="%1$s" class="area-banners__widget %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '<span class="sr-only">',
