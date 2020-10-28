@@ -1,0 +1,98 @@
+.wp-calendar-table {
+    @extend .table;
+}
+
+.widget_archive,
+.widget_categories {
+    ul {
+        @extend .list-group;
+
+        li {
+            @extend .list-group-item;
+        }
+    }
+
+    select {
+        @extend .form-control;
+    }
+}
+
+.widget_recent_comments {
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            border-bottom: 1px solid $gray-400;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.widget_media_image {
+    a {
+        display: block;
+    }
+}
+
+.widget_nav_menu,
+.widget_meta {
+    ul {
+        @extend .nav;
+        @extend .flex-column;
+
+        li {
+            @extend .nav-item;
+
+            a {
+                @extend .nav-link;
+            }
+        }
+    }
+
+    .sub-menu {
+        padding-left: 15px;
+    }
+}
+
+.widget_tag_cloud {
+    .tagcloud {
+        text-align: center;
+    }
+}
+
+.widget_recent_entries {
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            margin-bottom: 15px;
+        }
+    }
+
+    .post-date {
+        font-size: 0.9rem;
+        color: $gray-700;
+
+        &::before {
+            content: "\00B7\0020";
+        }
+    }
+}
+
+.widget_media_video {
+    .wp-video {
+        @extend .embed-responsive;
+        @extend .embed-responsive-16by9;
+
+        video {
+            @extend .embed-responsive-item;
+        }
+    }
+}
+
+.widget_media_gallery {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
