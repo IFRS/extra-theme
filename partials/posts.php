@@ -11,11 +11,18 @@
                     printf('%s&nbsp;&quot;%s&quot;', __('Tag', 'ifrs-extra-theme'), single_tag_title('', false));
                 } elseif (is_author()) {
                     printf('%s&nbsp;&quot;%s&quot;', __('Autor', 'ifrs-extra-theme'), get_the_author_meta('display_name'));
+                } elseif (is_day()) {
+                    printf('%s', get_the_date('d \d\e F \d\e Y'));
+                } elseif (is_month()) {
+                    printf('%s', get_the_date('F \d\e Y'));
+                } elseif (is_year()) {
+                    printf('%s', get_the_date('Y'));
                 } else {
                     echo 'Posts';
                 }
             ?>
             </h2>
+            <?php echo get_the_archive_description(); ?>
         </div>
     </div>
     <div class="row">
