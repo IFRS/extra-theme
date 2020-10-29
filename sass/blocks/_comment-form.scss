@@ -1,0 +1,54 @@
+.comment-form {
+    label {
+        color: $gray-700;
+    }
+
+    .logged-in-as {
+        font-size: 0.9rem;
+    }
+
+    .comment-notes {
+        font-size: 0.9rem;
+    }
+
+    .required {
+        color: $danger;
+    }
+
+    .submit {
+        @extend .btn;
+        @extend .btn-primary;
+    }
+
+    &-comment,
+    &-author,
+    &-email,
+    &-url {
+        @extend .form-group;
+
+        textarea,
+        input {
+            @extend .form-control;
+        }
+    }
+
+    &-cookies-consent {
+        @extend .form-group;
+        @extend .form-check;
+
+        input {
+            @extend .form-check-input;
+        }
+
+        label {
+            @extend .form-check-label;
+        }
+    }
+}
+
+.comment-reply-title {
+    #cancel-comment-reply-link {
+        @extend .btn;
+        @extend .btn-outline-danger;
+    }
+}

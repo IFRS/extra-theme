@@ -1,0 +1,15 @@
+.comments-pagination {
+    ul {
+        @extend .pagination;
+        justify-content: center;
+    }
+
+    li {
+        @extend .page-item;
+    }
+
+    a.page-numbers,
+    span.page-numbers {
+        @extend .page-link;
+    }
+}
