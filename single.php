@@ -11,9 +11,9 @@
     <div class="row single__meta">
         <div class="col-12 col-sm">
             <p>
-                <time class="single__date" datetime="<?php echo get_the_date('c'); ?>">publicado em <?php the_time('d'); ?> de <?php the_time('F'); ?> de <?php the_time('Y'); ?></time>
+                <time class="single__date" datetime="<?php echo get_the_date('c'); ?>">publicado em <?php the_date(); ?></time>
                 <?php if (get_the_modified_time() != get_the_time()) : ?>
-                    <time class="single__date">&uacute;ltima modifica&ccedil;&atilde;o em <?php the_modified_time('d'); ?> de <?php the_modified_time('F'); ?> de <?php the_modified_time('Y'); ?></time>
+                    <time class="single__date">&uacute;ltima modifica&ccedil;&atilde;o em <?php the_modified_date(); ?></time>
                 <?php endif; ?>
             </p>
         </div>
