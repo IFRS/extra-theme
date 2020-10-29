@@ -27,7 +27,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class() ?>>
+<body <?php body_class(); ?>>
     <a href="#main" class="sr-only">Pular para o conte&uacute;do</a>
 
     <?php echo get_template_part('partials/barrabrasil'); ?>
@@ -35,8 +35,12 @@
     <!-- Barra -->
     <div class="barra-social">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-6"></div>
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-6">
+                    <a class="barra-social__link" href="<?php echo ifrs_get_unidade('url'); ?>" title="<?php echo ifrs_get_unidade('title'); ?>">
+                        <img class="barra-social__logo" src="<?php echo ifrs_get_unidade('image'); ?>" alt="<?php echo ifrs_get_unidade('title'); ?>"/>
+                    </a>
+                </div>
                 <div class="col-12 col-sm-6">
                     <?php if (is_active_sidebar('sidebar-social')) : ?>
                         <nav aria-label="Redes Sociais">
@@ -77,6 +81,7 @@
                 <div class="col-12 col-md-7">
                     <div class="header__titulo">
                         <h1><?php bloginfo('name'); ?></h1>
+                        <small><?php echo ifrs_get_unidade('title'); ?></small>
                     </div>
                 </div>
             </div>

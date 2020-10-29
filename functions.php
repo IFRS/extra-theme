@@ -2,6 +2,9 @@
 // Suporte para diversas funções
 require_once('inc/theme-support.php');
 
+// Adição de opções no Customizer
+require_once('inc/customizer.php');
+
 // Títulos personalizados
 require_once('inc/custom-title.php');
 
