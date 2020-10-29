@@ -41,9 +41,9 @@
         }
 
         a {
-            background-image: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#{encodecolor($primary)}" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>');
+            @include icon-chevron-right($primary);
+
             background-position: left center;
-            background-repeat: no-repeat;
             background-size: 18px;
 
             color: $gray-700;
