@@ -30,6 +30,15 @@
 }
 
 .widget_media_image {
+    figure {
+        margin: 0 auto;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
     a {
         display: block;
     }
@@ -46,6 +55,18 @@
 
             a {
                 @extend .nav-link;
+                @include icon-chevron-right($primary);
+
+                background-position: left center;
+                background-size: 18px;
+
+                color: $gray-700;
+
+                padding-left: 20px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
