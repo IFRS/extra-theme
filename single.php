@@ -58,4 +58,12 @@
     </div>
 </article>
 
+<aside>
+    <?php
+        if ( comments_open() || get_comments_number() ) {
+            comments_template();
+        }
+    ?>
+</aside>
+
 <?php get_footer(); ?>
