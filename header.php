@@ -92,3 +92,4 @@
     <a href="#inicio-conteudo" id="inicio-conteudo" class="sr-only">In&iacute;cio do conte&uacute;do</a>
 
     <main role="main" id="main" class="container">
+        <?php extra_breadcrumb(); ?>

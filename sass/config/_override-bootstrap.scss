@@ -5,6 +5,11 @@ $font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe 
 @import 'bootstrap/scss/variables';
 @import 'bootstrap/scss/mixins';
 
-$navbar-light-color:        $gray-600;
-$navbar-light-hover-color:  $primary;
-$navbar-light-active-color: $primary;
+$breadcrumb-font-size:     0.8rem;
+$breadcrumb-bg:            $gray-100;
+$breadcrumb-border-radius: 0;
+
+$navbar-light-color:                $gray-600;
+$navbar-light-hover-color:          $primary;
+$navbar-light-active-color:         $primary;
+$navbar-light-toggler-border-color: transparent;

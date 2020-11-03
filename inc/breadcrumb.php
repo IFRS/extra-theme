@@ -6,9 +6,10 @@ function extra_breadcrumb() {
     $after     = '</li>';
 
     if (!is_front_page() || is_paged()) {
-		echo '<div class="container" id="breadcrumb"><div class="row"><div class="col">';
-		echo '<nav aria-label="breadcrumb"><ol class="breadcrumb">';
-		echo '<li>'.__('Voc&ecirc; est&aacute; em:&nbsp;').'</li>';
+        echo '<div class="row">';
+        echo '<div class="col">';
+        echo '<nav aria-label="Você está aqui">';
+        echo '<ol class="breadcrumb">';
 
         global $post;
         $homeLink = home_url();
@@ -93,10 +94,12 @@ function extra_breadcrumb() {
             $userdata = get_userdata($author);
             echo $before . ' ' . $userdata->display_name . $after;
         } elseif (is_404()) {
-            echo $before . 'Página não encontrada - Erro 404' . $after;
+            echo $before . 'Página não encontrada' . $after;
         }
 
-        echo '</nav></ol>';
-		echo '</div></div></div>';
+        echo '</nav>';
+        echo '</ol>';
+        echo '</div>';
+        echo '</div>';
     }
 }
