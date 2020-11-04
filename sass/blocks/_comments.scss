@@ -1,0 +1,10 @@
+.comments {
+    &__title {
+        font-size: 1.5rem;
+    }
+
+    &__closed {
+        @extend .alert;
+        @extend .alert-warning;
+    }
+}
