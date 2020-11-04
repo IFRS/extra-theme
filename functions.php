@@ -1,4 +1,7 @@
 <?php
+// Define a largura máxima do conteúdo
+require_once('inc/content.php');
+
 // Suporte para diversas funções
 require_once('inc/theme-support.php');
 
