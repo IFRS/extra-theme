@@ -20,7 +20,7 @@ add_action( 'after_setup_theme', function() {
     // Add theme support for Responsive Embeds
     add_theme_support( 'responsive-embeds' );
 
-    // Add theme support for document Title tag
+    // Add theme support for document <title> tag
     add_theme_support( 'title-tag' );
 
     // Add theme support for Custom Logo
@@ -29,7 +29,7 @@ add_action( 'after_setup_theme', function() {
         'width'       => 400,
         'flex-height' => true,
         'flex-width'  => true,
-    ));
+    ) );
 
     // Add theme support for Custom Header
     add_theme_support( 'custom-header', array(

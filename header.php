@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
     <meta name="author" content="Departamento de Comunicação do IFRS">
-    <!-- Title -->
-    <title><?php echo get_template_part('partials/title'); ?></title>
     <!-- Favicons -->
     <?php echo get_template_part('partials/favicons'); ?>
     <!-- Contexto Barra Brasil -->
