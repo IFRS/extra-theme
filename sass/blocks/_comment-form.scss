@@ -50,5 +50,7 @@
     #cancel-comment-reply-link {
         @extend .btn;
         @extend .btn-outline-danger;
+
+        margin-left: 10px;
     }
 }
