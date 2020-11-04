@@ -40,8 +40,9 @@
 
     $args = array(
         'post_type' => 'post',
-        'posts_per_page' => (get_option('show_on_front') === 'page') ? 3 : get_option('posts_per_page'),
+        'posts_per_page' => 3,
         'ignore_sticky_posts' => true,
+        'post__not_in' => get_option('sticky_posts'),
     );
 
     $query = ((get_option('show_on_front') === 'page')) ? new WP_Query($args) : $wp_query;
