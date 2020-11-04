@@ -54,4 +54,8 @@
     &.thread-odd {
         background: $gray-100;
     }
+
+    &.bypostauthor {
+        border-left: 1px solid lighten($primary, 25%);
+    }
 }
