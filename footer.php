@@ -19,7 +19,7 @@
                 <div class="col">
                 <?php if (has_nav_menu('principal')) : ?>
                     <nav id="mapa-site" class="site-map" aria-labelledby="mapa-site-titulo">
-                        <h2 id="mapa-site-titulo" class="site-map__title">Mapa do Site</h2>
+                        <h2 id="mapa-site-titulo" class="site-map__title"><?php _e('Mapa do Site', 'ifrs-extra-theme'); ?></h2>
                         <?php
                             wp_nav_menu( array(
                                 'theme_location'    => 'principal',

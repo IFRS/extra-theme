@@ -49,7 +49,7 @@
 <?php if ($query->have_posts()) : ?>
     <div class="row">
         <div class="col">
-            <h2>Posts</h2>
+            <h2><?php _e('Posts', 'ifrs-extra-theme'); ?></h2>
         </div>
     </div>
     <div class="row">

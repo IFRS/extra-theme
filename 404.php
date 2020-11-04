@@ -3,7 +3,7 @@
 <div class="row">
     <div class="col-12">
         <div class="alert alert-danger text-center" role="alert">
-            <strong>Ops!&nbsp;</strong>
+            <strong>Ops!</strong>
             <br>
             A p&aacute;gina que voc&ecirc; procura n&atilde;o foi encontrada.
             <br>
