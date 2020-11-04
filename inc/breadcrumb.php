@@ -12,11 +12,11 @@ function extra_breadcrumb() {
         echo '<ol class="breadcrumb">';
 
         global $post;
-        $homeLink = home_url();
+        $homelink = home_url();
 		$siteprincipal = get_home_url('1','/');
         $nomesite = get_bloginfo('name');
 
-        echo '<li class="breadcrumb-item"><a href="' . $homeLink . '">' . $nomesite . '</a> '.$sep. '</li> ';
+        echo '<li class="breadcrumb-item"><a href="' . $homelink . '">' . $nomesite . '</a></li> ';
 
         if (is_home()) {
             echo $before . get_the_title(get_option( 'page_for_posts' )) . $after;
@@ -27,7 +27,9 @@ function extra_breadcrumb() {
             $thisCat   = get_category($thisCat);
             $parentCat = get_category($thisCat->parent);
             if ($thisCat->parent != 0) {
+                echo '<li class="breadcrumb-item">';
                 echo get_category_parents($parentCat, true, $sep);
+                echo '</li>';
             }
             echo $before . single_cat_title('', false) . $after;
         } elseif (is_search()) {
@@ -51,7 +53,7 @@ function extra_breadcrumb() {
             if (get_post_type() != 'post') {
                 $post_type = get_post_type_object(get_post_type());
                 $slug      = $post_type->rewrite;
-                echo '<li class="breadcrumb-item"><a href="' . $homeLink . '/' . $slug['slug'] . '/">' . $post_type->labels->name . '</a></li> ';
+                echo '<li class="breadcrumb-item"><a href="' . $homelink . '/' . $slug['slug'] . '/">' . $post_type->labels->name . '</a></li> ';
                 echo $before . get_the_title() . $after;
             } else {
                 $cat = get_the_category();
@@ -65,7 +67,9 @@ function extra_breadcrumb() {
             $parent = get_post($post->post_parent);
             $cat    = get_the_category($parent->ID);
             $cat    = $cat[0];
+            echo '<li class="breadcrumb-item">';
             echo get_category_parents($cat, true, $sep);
+            echo '</li>';
             echo '<li class="breadcrumb-item"><a href="' . get_permalink(
                 $parent
             ) . '">' . $parent->post_title . '</a></li> ';
