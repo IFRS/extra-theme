@@ -2,7 +2,7 @@
 
 <?php the_post(); ?>
 
-<article class="single">
+<article id="post-<?php the_ID(); ?>" <?php post_class('single'); ?>>
     <div class="row">
         <div class="col">
             <h2 class="single__title"><?php the_title(); ?></h2>
