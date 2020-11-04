@@ -20,7 +20,7 @@
     <?php endwhile; ?>
 <?php else : ?>
     <div class="alert alert-warning text-center">
-        <?php _e('Nenhum resultado encontrado.'); ?>
+        <?php _e('Nenhum resultado encontrado.', 'ifrs-extra-theme'); ?>
     </div>
 <?php endif; ?>
 

@@ -5,7 +5,7 @@
         <h2 class="comments__title">
             <?php
                 printf(
-                    _nx( '%s Coment&aacute;rio', '%s Coment&aacute;rios', get_comments_number(), 'comments title', 'ifrs-theme-extra' ),
+                    _nx( '%s Coment&aacute;rio', '%s Coment&aacute;rios', get_comments_number(), 'comments title', 'ifrs-extra-theme' ),
                     number_format_i18n( get_comments_number() )
                 );
             ?>
