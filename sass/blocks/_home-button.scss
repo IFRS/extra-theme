@@ -1,0 +1,13 @@
+.home-button {
+    @extend .btn;
+    @extend .btn-lg;
+    @include button-outline-variant($gray-400);
+    @include icon-chevron-right($primary);
+
+    background-position: right center;
+    background-size: 32px;
+    color: $primary;
+    font-weight: bold;
+    padding-right: 38px;
+    text-transform: uppercase;
+}
