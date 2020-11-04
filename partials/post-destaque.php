@@ -2,7 +2,7 @@
     <div class="row no-gutters">
         <div class="col-12 col-md-5 order-2 order-md-1">
             <div class="post-destaque__painel">
-                <h3 class="post-destaque__titulo"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <h2 class="post-destaque__titulo"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                 <time class="post-destaque__data" datetime="<?php echo get_the_date('c'); ?>"><?php the_time('d.m.Y'); ?></time>
                 <hr class="post-destaque__separador">
                 <div class="post-destaque__resumo"><?php the_excerpt(); ?></div>
