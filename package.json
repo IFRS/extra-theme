@@ -25,9 +25,9 @@
     "picturefill": "^3.0.3",
     "pixrem": "^5.0.0",
     "plugin-error": "^1.0.1",
-    "postcss": "^8.1.2",
+    "postcss": "^8.1.6",
     "postcss-flexibility": "^2.0.0",
     "respond.js": "^1.4.2",
-    "webpack": "^5.1.3"
+    "webpack": "^5.4.0"
   }
 }
