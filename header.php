@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?> prefix="og: http://ogp.me/ns#">
 <head>
     <!-- Meta -->
-    <meta charset="<?php esc_attr(get_bloginfo( 'charset' )); ?>">
+    <meta charset="<?php echo esc_attr( get_bloginfo( 'charset' ) ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index,follow">
