@@ -1,8 +1,7 @@
 <?php
-    if (has_site_icon()) :
-        wp_site_icon();
-    else :
+    if (!has_site_icon()) :
 ?>
+    <!-- Favicon IFRS -->
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri()); ?>/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="<?php echo esc_url(get_template_directory_uri()); ?>/favicons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="<?php echo esc_url(get_template_directory_uri()); ?>/favicons/favicon-194x194.png" sizes="194x194">
