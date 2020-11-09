@@ -6,12 +6,12 @@
     <div class="post-item__resumo">
         <?php the_excerpt(); ?>
     </div>
-    <hr class="post-item__separador">
-    <div class="post-item__meta">
     <?php if (comments_open()) : ?>
-        <span class="post-item__comentarios">
-            <?php echo get_comments_number(); ?>
-        </span>
+        <hr class="post-item__separador">
+        <div class="post-item__meta">
+            <span class="post-item__comentarios">
+                <?php echo get_comments_number(); ?>
+            </span>
+        </div>
     <?php endif; ?>
-    </div>
 </article>
