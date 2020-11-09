@@ -1,9 +1,16 @@
 $primary: #6B42A0;
-$font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 @import 'bootstrap/scss/functions';
 @import 'bootstrap/scss/variables';
+
+$theme-colors: (
+  "light": $gray-200,
+);
+
+@import 'bootstrap/scss/variables';
 @import 'bootstrap/scss/mixins';
+
+$font-family-base: "Open Sans", #{$font-family-sans-serif};
 
 $breadcrumb-font-size:     0.8rem;
 $breadcrumb-bg:            $gray-100;
