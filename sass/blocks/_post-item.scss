@@ -14,10 +14,13 @@
         word-wrap: break-word;
     }
 
+    &__meta {
+        margin-bottom: 10px;
+    }
+
     &__data {
         color: $gray-600;
         display: inline-block;
-        margin-bottom: 10px;
     }
 
     &__resumo {
