@@ -4,6 +4,11 @@
 
     &__link {
         display: inline-block;
+
+        @include media-breakpoint-down(sm) {
+            display: block;
+            text-align: center;
+        }
     }
 
     &__logo {

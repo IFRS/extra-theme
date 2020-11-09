@@ -5,6 +5,11 @@
     padding-right: 30px;
     text-align: right;
 
+    @include media-breakpoint-down(sm) {
+        margin-top: 15px;
+        text-align: center;
+    }
+
     &__widget {
         display: inline-block;
         margin-right: 5px;

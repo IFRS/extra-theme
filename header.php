@@ -47,12 +47,12 @@
     <div class="barra-social">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-sm-6">
-                    <a class="barra-social__link" href="<?php echo ifrs_get_unidade('url'); ?>">
+                <div class="col-12 col-md-6">
+                    <a class="barra-social__link" href="<?php echo ifrs_get_unidade('url'); ?>" data-toggle="tooltip" data-placement="bottom" title="Site do <?php echo ifrs_get_unidade('title'); ?>">
                         <img class="barra-social__logo" src="<?php echo ifrs_get_unidade('image'); ?>" alt="<?php echo ifrs_get_unidade('title'); ?>"/>
                     </a>
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-md-6">
                     <?php if (is_active_sidebar('sidebar-social')) : ?>
                         <nav aria-label="Redes Sociais">
                             <ul class="area-social">
