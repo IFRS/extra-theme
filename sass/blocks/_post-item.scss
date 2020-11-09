@@ -5,13 +5,16 @@
     padding: 20px 10px 10px;
 
     &__titulo {
-        border: none;
         font-size: 1.25rem;
         margin-bottom: 10px;
         margin-top: 0;
         padding: 0;
         text-transform: uppercase;
         word-wrap: break-word;
+
+        &::after {
+            content: none;
+        }
     }
 
     &__meta {
@@ -32,19 +35,16 @@
         margin-top: 10px;
     }
 
-    &__meta {
-        color: $gray-600;
-        font-size: 0.8rem;
-        text-align: center;
-    }
-
     &__comentarios {
         @include icon-comment($gray-500);
 
         background-position: right center;
         background-size: 16px;
+        color: $gray-600;
         display: inline-block;
+        font-size: 0.8rem;
         margin-right: 20px;
         padding-right: 18px;
+        text-align: center;
     }
 }

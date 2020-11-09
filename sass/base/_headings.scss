@@ -3,10 +3,17 @@ h3,
 h4,
 h5,
 h6 {
-    border-bottom: 5px solid $gray-400;
     color: $primary;
     font-weight: bold;
     margin-bottom: 1rem;
     margin-top: 2rem;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute; left: 0; bottom: 0;
+        width: 40%; height: 5px;
+        background: $gray-400;
+    }
 }
