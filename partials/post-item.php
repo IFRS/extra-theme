@@ -10,8 +10,10 @@
     </div>
     <?php if (comments_open()) : ?>
         <hr class="post-item__separador">
-        <span class="post-item__comentarios">
-            <?php echo get_comments_number(); ?>
-        </span>
+        <div class="post-item__info">
+            <span class="post-item__comentarios">
+                <?php echo get_comments_number(); ?>
+            </span>
+        </div>
     <?php endif; ?>
 </article>

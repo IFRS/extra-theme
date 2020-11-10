@@ -35,6 +35,10 @@
         margin-top: 10px;
     }
 
+    &__info {
+        text-align: center;
+    }
+
     &__comentarios {
         @include icon-comment($gray-500);
 
@@ -43,8 +47,6 @@
         color: $gray-600;
         display: inline-block;
         font-size: 0.8rem;
-        margin-right: 20px;
         padding-right: 18px;
-        text-align: center;
     }
 }
