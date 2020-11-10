@@ -10,15 +10,6 @@ add_action( 'widgets_init', function() {
         'after_title'   => '</span>',
     )); */
     register_sidebar( array(
-        'name'          => __('Área Social', 'ifrs-extra-theme'),
-        'id'            => 'sidebar-social',
-        'description'   => __('Área no cabeçalho para as Redes Sociais. Tamanho recomendado de 32x32 px.', 'ifrs-extra-theme'),
-        'before_widget' => '<li id="%1$s" class="area-social__widget %2$s">',
-        'after_widget'  => '</li>',
-        'before_title'  => '<span class="sr-only">',
-        'after_title'   => '</span>',
-    ) );
-    register_sidebar( array(
         'name'          => __('Área Destaques', 'ifrs-extra-theme'),
         'id'            => 'sidebar-destaques',
         'description'   => __('Área abaixo dos posts na página inicial, antes do rodapé, para uso geral.', 'ifrs-extra-theme'),
@@ -26,6 +17,15 @@ add_action( 'widgets_init', function() {
         'after_widget'  => '</div>',
         'before_title'  => '<h2>',
         'after_title'   => '</h2>',
+    ) );
+    register_sidebar( array(
+        'name'          => __('Área Social', 'ifrs-extra-theme'),
+        'id'            => 'sidebar-social',
+        'description'   => __('Área no cabeçalho para as Redes Sociais. Tamanho recomendado de 32x32 px.', 'ifrs-extra-theme'),
+        'before_widget' => '<li id="%1$s" class="area-social__widget %2$s">',
+        'after_widget'  => '</li>',
+        'before_title'  => '<span class="sr-only">',
+        'after_title'   => '</span>',
     ) );
     register_sidebar( array(
         'name'          => __('Área Banners', 'ifrs-extra-theme'),
