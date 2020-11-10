@@ -71,17 +71,7 @@
     </div>
 
     <!-- Cabeçalho -->
-    <header class="header">
-    <?php if ( get_header_image() ) : ?>
-        <img
-            data-src="<?php header_image(); ?>"
-            width="<?php echo esc_attr( absint( get_custom_header()->width ) ); ?>"
-            height="<?php echo esc_attr( absint( get_custom_header()->height ) ); ?>"
-            alt=""
-            aria-hidden="true"
-            class="lazyload header__background-image"
-        />
-    <?php endif; ?>
+    <header class="header" style="<?php echo get_header_image() ? 'background-image:url(\''.get_header_image().'\')' : ''; ?>">
         <div class="container">
             <div class="row no-gutters align-items-end">
                 <?php if (has_custom_logo()) : ?>

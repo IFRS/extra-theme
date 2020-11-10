@@ -51,20 +51,85 @@ add_action( 'after_setup_theme', function() {
 
     // Default Headers
     register_default_headers( array(
-        // 'alvorada' => array(
-        //     'url'           => '%s/img/header/alvorada.jpg',
-        //     'thumbnail_url' => '/img/header-alvorada.thumb.png',
-        //     'description'   => __( 'Campus Alvorada', 'ifrs-extra-theme' ),
-        // ),
-        // 'bento' => array(
-        //     'url'           => '%s/img/header/bento.jpg',
-        //     'thumbnail_url' => '/img/header/bento.thumb.png',
-        //     'description'   => __( 'Campus Bento', 'ifrs-extra-theme' ),
-        // ),
-        // 'canoas' => array(
-        //     'url'           => '%s/img/header/canoas.jpg',
-        //     'thumbnail_url' => '/img/header/canoas.thumb.png',
-        //     'description'   => __( 'Campus Canoas', 'ifrs-extra-theme' ),
-        // ),
+        'fachada_bento' => array(
+            'url'           => '%s/img/fundos/fachada-bento.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-bento.thumb.jpg',
+            'description'   => __( 'Fachada Campus Bento Gonçalves', 'ifrs-extra-theme' ),
+        ),
+        'fachada_canoas' => array(
+            'url'           => '%s/img/fundos/fachada-canoas.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-canoas.thumb.jpg',
+            'description'   => __( 'Fachada Campus Canoas', 'ifrs-extra-theme' ),
+        ),
+        'fachada_caxias' => array(
+            'url'           => '%s/img/fundos/fachada-caxias.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-caxias.thumb.jpg',
+            'description'   => __( 'Fachada Campus Caxias do Sul', 'ifrs-extra-theme' ),
+        ),
+        'fachada_erechim' => array(
+            'url'           => '%s/img/fundos/fachada-erechim.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-erechim.thumb.jpg',
+            'description'   => __( 'Fachada Campus Erechim', 'ifrs-extra-theme' ),
+        ),
+        'fachada_farroupilha' => array(
+            'url'           => '%s/img/fundos/fachada-farroupilha.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-farroupilha.thumb.jpg',
+            'description'   => __( 'Fachada Campus Farroupilha', 'ifrs-extra-theme' ),
+        ),
+        'fachada_feliz' => array(
+            'url'           => '%s/img/fundos/fachada-feliz.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-feliz.thumb.jpg',
+            'description'   => __( 'Fachada Campus Feliz', 'ifrs-extra-theme' ),
+        ),
+        'fachada_ibiruba' => array(
+            'url'           => '%s/img/fundos/fachada-ibiruba.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-ibiruba.thumb.jpg',
+            'description'   => __( 'Fachada Campus Ibirubá', 'ifrs-extra-theme' ),
+        ),
+        'fachada_osorio' => array(
+            'url'           => '%s/img/fundos/fachada-osorio.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-osorio.thumb.jpg',
+            'description'   => __( 'Fachada Campus Osório', 'ifrs-extra-theme' ),
+        ),
+        'fachada_poa' => array(
+            'url'           => '%s/img/fundos/fachada-poa.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-poa.thumb.jpg',
+            'description'   => __( 'Fachada Campus Porto Alegre', 'ifrs-extra-theme' ),
+        ),
+        'fachada_restinga' => array(
+            'url'           => '%s/img/fundos/fachada-restinga.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-restinga.thumb.jpg',
+            'description'   => __( 'Fachada Campus Restinga', 'ifrs-extra-theme' ),
+        ),
+        'fachada_riogrande' => array(
+            'url'           => '%s/img/fundos/fachada-riogrande.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-riogrande.thumb.jpg',
+            'description'   => __( 'Fachada Campus Rio Grande', 'ifrs-extra-theme' ),
+        ),
+        'fachada_rolante' => array(
+            'url'           => '%s/img/fundos/fachada-rolante.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-rolante.thumb.jpg',
+            'description'   => __( 'Fachada Campus Rolante', 'ifrs-extra-theme' ),
+        ),
+        'fachada_sertao' => array(
+            'url'           => '%s/img/fundos/fachada-sertao.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-sertao.thumb.jpg',
+            'description'   => __( 'Fachada Campus Sertão', 'ifrs-extra-theme' ),
+        ),
+        'fachada_vacaria' => array(
+            'url'           => '%s/img/fundos/fachada-vacaria.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-vacaria.thumb.jpg',
+            'description'   => __( 'Fachada Campus Vacaria', 'ifrs-extra-theme' ),
+        ),
+        'fachada_veranopolis' => array(
+            'url'           => '%s/img/fundos/fachada-veranopolis.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-veranopolis.thumb.jpg',
+            'description'   => __( 'Fachada Campus Veranópolis', 'ifrs-extra-theme' ),
+        ),
+        'fachada_viamao' => array(
+            'url'           => '%s/img/fundos/fachada-viamao.jpg',
+            'thumbnail_url' => '%s/img/fundos/fachada-viamao.thumb.jpg',
+            'description'   => __( 'Fachada Campus Viamão', 'ifrs-extra-theme' ),
+        ),
     ) );
 } );
