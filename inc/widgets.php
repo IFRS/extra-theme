@@ -1,14 +1,5 @@
 <?php
 add_action( 'widgets_init', function() {
-    /* register_sidebar(array(
-        'name'          => __('Carousel', 'ifrs-extra-theme'),
-        'id'            => 'sidebar-carousel',
-        'description'   => __('Área para conteúdo em forma de slider, geralmente imagens.', 'ifrs-extra-theme'),
-        'before_widget' => '<div id="%1$s" class="carousel-item %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<span class="sr-only">',
-        'after_title'   => '</span>',
-    )); */
     register_sidebar( array(
         'name'          => __('Área Destaques', 'ifrs-extra-theme'),
         'id'            => 'sidebar-destaques',
